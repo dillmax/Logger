@@ -1,11 +1,11 @@
 import React from 'react';
-import ToDo from './containers/ToDo'
+import Logger from './containers/Logger'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ToDo/>        
+      <Logger/>        
     </div>
   );
 }
