@@ -9,11 +9,11 @@ class Logger extends Component {
         this.state = {
             loggerItems: [],
             newlogger: ''
-        }
     }
+}
 
     render() {
-        const { loggerItems, newlogger } = this.state;
+        const { loggerItems, newlogger, } = this.state;
 
         return(
             <div>
@@ -26,14 +26,20 @@ class Logger extends Component {
                         newlogger: event.target.value
                     })
                 }} />
+                
                 <button onClick={() => {
                     this.setState({
                         loggerItems: [...loggerItems, {
                             id: newlogger,
-                            name: newlogger
+                            name: newlogger,
                         }]
                     })
                 }} >ADD</button>
+
+                <button onClick={() => {
+                    this.setState({loggerItems: []});
+
+                }} >Clear</button>
 
                 <h2>Your Log List</h2>
 

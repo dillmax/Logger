@@ -6,6 +6,7 @@ const LoggerList = ({ loggerItems }) => {
             {loggerItems.map((loggerItem) => {
                 return <li key={loggerItem.id} >{loggerItem.name}</li>
             })}
+            
         </ul>
     </div>)
 }
