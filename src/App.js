@@ -1,5 +1,4 @@
 import React from 'react';
-import Logger from './containers/Logger'
 import './App.css';
 
 function App() {
